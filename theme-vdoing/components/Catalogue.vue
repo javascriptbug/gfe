@@ -112,7 +112,9 @@ export default {
     },
     getCatalogueList () {
       const { sidebar } = this.$site.themeConfig
+      console.log(this.$site.themeConfig,"sidebar")
       const key = this.$frontmatter.pageComponent.data.key
+      console.log(key,"key")
       const catalogueList = sidebar[`/${key}/`]
 
       if (!catalogueList) {

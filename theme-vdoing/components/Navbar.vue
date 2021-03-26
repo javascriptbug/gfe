@@ -5,7 +5,7 @@
     <router-link
       :to="$localePath"
       class="home-link"
-    >logo
+    >
       <img
         class="logo"
         v-if="$site.themeConfig.logo"
@@ -17,7 +17,7 @@
         class="site-name"
         v-if="$siteTitle"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }} <sup>1.0</sup></span>111111111111111
+      >{{ $siteTitle }} </span><sup v-if="$site.themeConfig.sup"> {{$site.themeConfig.sup}}</sup>
     </router-link>
 
     <div
@@ -90,6 +90,8 @@ function css (el, property) {
 <style lang="stylus">
 $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
+.home-link
+  line-height 1.6rem
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem

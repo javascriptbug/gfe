@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: GUI
+heroText: GUI 的点点滴滴
 tagline: 以 vuepress-theme-vdoing 为蓝本的内部管理wiki与组件库
 # actionText: 立刻进入 →
 # actionLink: /web/

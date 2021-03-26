@@ -15,7 +15,7 @@ features: # 可选的
   - title: 页面
     details: html(5)/css(3)，前端页面相关技术
     link: /ui/
-    imgUrl: /img/200.png
+    imgUrl: /img/2000.png
   - title: 技术
     details: 技术文档、教程、技巧、总结等文章
     link: /technology/

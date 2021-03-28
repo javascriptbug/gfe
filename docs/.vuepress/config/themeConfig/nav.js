@@ -59,6 +59,14 @@ module.exports = [
     ],
   },
   {
+    text: '面试',
+    link: '/interview/',
+    items: [
+      { text: '总论', link: '/pages/1fbe96/' },
+      { text: '文档库', link: '/pages/996b0e/' },
+    ],
+  },
+  {
     text: '更多',
     link: '/more/',
     items: [

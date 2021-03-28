@@ -6,7 +6,7 @@ install:
 script:
   - yarn build
 deploy:
-  fqdn: www.gfe.wiki
+  fqdn: gfe.wiki
   provider: pages
   skip_cleanup: true
   local_dir: docs/.vuepress/dist

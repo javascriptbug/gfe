@@ -9,7 +9,7 @@ tagline: 内部管理wiki与组件库
 
 features: # 可选的
   - title: 前端
-    details: JavaScript、ES6、Vue框架等前端
+    details: JavaScript、ES6、Vue框架等前
     link: /web/ # 可选
     imgUrl: /img/100.png # 可选
   - title: 页面

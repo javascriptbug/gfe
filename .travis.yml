@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - lts/*
+install:
+  - npm ci
+script:
+  - npm run docs:build
+deploy:
+  fqdn: gfe.wiki
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master

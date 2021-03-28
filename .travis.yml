@@ -4,7 +4,7 @@ node_js:
 install:
   - npm ci
 script:
-  - npm install && npm run build && cd docs/.vuepress/dist && echo 'gui.wiki' > CNAME && cd - 
+  - npm install && npm run build && cd docs/.vuepress/dist && echo 'gfe.wiki' > CNAME && cd - 
 deploy:
   fqdn: gfe.wiki
   provider: pages

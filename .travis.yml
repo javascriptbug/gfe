@@ -10,7 +10,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: docs/.vuepress/dist
-  token: $GITHUB_TOKEN
+  token: $duan
   keep_history: true
   on:
     branch: master

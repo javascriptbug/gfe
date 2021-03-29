@@ -67,6 +67,14 @@ module.exports = [
     ],
   },
   {
+    text: '关于',
+    link: '/about/',
+    items: [
+      { text: '框架概览', link: '/pages/82b12d/' },
+      { text: '相关技术', link: '/pages/d3923a/' },
+    ],
+  },
+  {
     text: '更多',
     link: '/more/',
     items: [
@@ -77,7 +85,7 @@ module.exports = [
       { text: '友情链接', link: '/friends/' },
     ],
   },
-  { text: '关于', link: '/about/' },
+  // { text: '关于', link: '/about/' },
   {
     text: '收藏',
     link: '/pages/beb6c0bd8a66cea6/',

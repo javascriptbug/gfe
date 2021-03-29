@@ -7,7 +7,11 @@ Vue.component(CodeBlock)
 Vue.component(CodeGroup)
 
 //  注：此文件在浏览器端运行
+import 'ant-design-vue/dist/antd.min.css';
 import postsMixin from '@theme/mixins/posts'
+
+
+
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
   options, // 附加到根实例的一些选项

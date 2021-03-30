@@ -14,7 +14,7 @@ module.exports = [
       {
         text: '组件库',
         items: [
-          { text: '组件一览', link: '/gui/antdv-componentss/' },
+          { text: '组件一览', link: '/gui/antdv-components/' },
         ],
       },
     ]

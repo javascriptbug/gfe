@@ -83,6 +83,19 @@ module.exports = [
   //   ],
   // },
   {
+    text: '员工指南',
+    link: '/zhinan/',
+    items: [
+      { text: '新员工指南', link: '/pages/4f2799/' },
+      {
+        text: '文档汇总',
+        items: [
+          { text: '资本化表格', link: '/pages/55d2fc/' },
+        ],
+      },
+    ],
+  },
+  {
     text: '面试',
     link: '/interview/',
     items: [

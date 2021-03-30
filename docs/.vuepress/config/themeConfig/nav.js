@@ -81,7 +81,17 @@ module.exports = [
     link: '/interview/',
     items: [
       { text: '总论', link: '/pages/1fbe96/' },
-      { text: '文档库', link: '/pages/996b0e/' },
+      {
+        text: '面试题',
+        items: [
+          { text: 'Vue', link: '/pages/b5e027/' },
+          { text: 'React', link: '/pages/a7780a/' },
+          { text: '小程序', link: '/pages/9aade0/' },
+          { text: 'js基础', link: '/pages/0a4c33/' },
+          { text: '框架类', link: '/pages/a90b53/' },
+          { text: '框架类', link: '/pages/8c4bc7/' },
+        ],
+      },
     ],
   },
   {

@@ -47,7 +47,8 @@
 
     <!-- 归档页 -->
     <ArchivesPage v-else-if="$page.frontmatter.archivesPage" />
-
+    <!-- 表格页 -->
+    <Page1 v-else-if="$page.frontmatter.tablePage" />
     <!-- 文章页或其他页 -->
     <Page
       v-else
@@ -105,6 +106,7 @@
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
+import Page1 from '@theme/components/Page1.vue'
 import CategoriesPage from '@theme/components/CategoriesPage.vue'
 import TagsPage from '@theme/components/TagsPage.vue'
 import ArchivesPage from '@theme/components/ArchivesPage.vue'
@@ -120,7 +122,7 @@ const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
 const NAVBAR_HEIGHT = 58 // 导航栏高度
 
 export default {
-  components: { Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
+  components: { Home, Navbar, Page, Page1, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
 
   data () {
     return {

@@ -1,14 +1,13 @@
 <template>
   <div>
     <main class="page page1">
-111111111111111111111111111111111111111111
       <div :class="`theme-vdoing-wrapper ${bgStyle}`">
-        <ArticleInfo v-if="isArticle()" />
-        <component
+        <!-- <ArticleInfo v-if="isArticle()" /> -->
+        <!-- <component
           class="theme-vdoing-content"
           v-if="pageComponent"
           :is="pageComponent"
-        />
+        /> -->
         <div class="content-wrapper">
           <RightMenu v-if="showRightMenu" />
           <h1 v-if="showTitle">
@@ -18,15 +17,11 @@
             />
             {{this.$page.title}}
           </h1>
-          <slot name="top" v-if="isShowSlotT" />
-
-          <Content class="theme-vdoing-content" />
+          {{ page1Data.heroText }}
+          <!-- <Content class="theme-vdoing-content" /> -->
         </div>
-  <slot name="bottom"  v-if="isShowSlotB" />
-        <PageEdit />
-
-
-        <PageNav v-bind="{ sidebarItems }" />
+        <!-- <PageEdit /> -->
+        <!-- <PageNav v-bind="{ sidebarItems }" /> -->
       </div>
 
 
@@ -63,6 +58,11 @@ export default {
     this.updateBarConfig = this.$themeConfig.updateBar
   },
   computed: {
+    page1Data () {
+      return {
+        ...this.$page.frontmatter
+      }
+    },
     bgStyle () {
       const { contentBgStyle } = this.$themeConfig
       return contentBgStyle ? 'bg-style-' + contentBgStyle : ''
@@ -173,14 +173,14 @@ export default {
 
 
 .page1 >* {
-    max-width: 1280px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 1rem 2.5rem 2rem 2.5rem;
 }
 .page1 .theme-vdoing-content {
-    max-width: 1280px;
+    max-width: 90%;
 }
 .page1 .page-edit {
-    max-width: 1280px;
+    max-width: 90%;
 }
 </style>

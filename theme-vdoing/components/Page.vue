@@ -1,7 +1,6 @@
 <template>
   <div>
     <main class="page">
-0000000000000000000000000000000000000
       <div :class="`theme-vdoing-wrapper ${bgStyle}`">
         <ArticleInfo v-if="isArticle()" />
         <component

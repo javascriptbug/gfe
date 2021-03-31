@@ -1,7 +1,7 @@
 <template>
   <div>
-    <main class="page">
-
+    <main class="page page1">
+111111111111111111111111111111111111111111
       <div :class="`theme-vdoing-wrapper ${bgStyle}`">
         <ArticleInfo v-if="isArticle()" />
         <component
@@ -172,10 +172,15 @@ export default {
       display none
 
 
-.page >* {
+.page1 >* {
     max-width: 1280px;
     margin: 0 auto;
     padding: 1rem 2.5rem 2rem 2.5rem;
 }
-
+.page1 .theme-vdoing-content {
+    max-width: 1280px;
+}
+.page1 .page-edit {
+    max-width: 1280px;
+}
 </style>

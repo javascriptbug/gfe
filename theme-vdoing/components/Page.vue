@@ -1,7 +1,7 @@
 <template>
   <div>
     <main class="page">
-
+0000000000000000000000000000000000000
       <div :class="`theme-vdoing-wrapper ${bgStyle}`">
         <ArticleInfo v-if="isArticle()" />
         <component
@@ -171,11 +171,5 @@ export default {
     .sidebar .sidebar-sub-headers
       display none
 
-
-.page >* {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 1rem 2.5rem 2rem 2.5rem;
-}
 
 </style>

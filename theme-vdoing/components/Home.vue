@@ -143,7 +143,7 @@
       </template>
 
       <template #mainRight>
-        <BloggerBar v-if="$themeConfig.blogger" />
+        <!-- <BloggerBar v-if="$themeConfig.blogger" /> -->
         <CategoriesBar
           v-if="
             $themeConfig.category !== false &&

@@ -96,6 +96,18 @@ module.exports = [
     ],
   },
   {
+    text: '内部文档',
+    link: '/self-doc/',
+    items: [
+      {
+        text: '官网',
+        items: [
+          { text: '汇总集', link: '/pages/29d1ec/' },
+        ],
+      },
+    ],
+  },
+  {
     text: '面试',
     link: '/interview/',
     items: [

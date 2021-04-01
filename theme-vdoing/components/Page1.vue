@@ -11,41 +11,92 @@
             />
             {{this.$page.title}}
           </h1>
-          {{ page1Data.heroText }}
-              <a-card size="small" title="真划算">
+
+
+          <div style="margin-top:10px;"
+            v-for="(card, index) in page1Data.cards"
+            :key="index"
+          >
+              <a-card size="small" :title="card.title" v-if="card.type == 0">
                 <a-card-grid style="width:100%;">
                 <a-descriptions size="small" :column="5">
                   <a-descriptions-item label="应用">
-                    cheap-web
+                    {{card.package}}
                   </a-descriptions-item>
                   <a-descriptions-item label="发版关键词">
-                    gfe发版
+                    {{card.sre}}
                   </a-descriptions-item>
                   <a-descriptions-item label="后端">
-                    张飞云（组）
+                    {{card.java}}
                   </a-descriptions-item>
                   <a-descriptions-item label="产品">
-                    无
+                    {{card.pm}}
                   </a-descriptions-item>
                   <a-descriptions-item label="前端">
-                    段宁
+                    {{card.fe}}
                   </a-descriptions-item>
                   <a-descriptions-item label="svn" :span=5>
-                    https://code.ds.gome.com.cn/svn/atg_poc/30_Coding/NewDevMode/trunk/gome-gfe/channel-web/newindex
+                    {{card.svn}}
                   </a-descriptions-item>
                   <a-descriptions-item label="地址" :span=3>
-                    首页：http://tuan.gome.com.cn/cheap-web<br>
-                    抢购专场：http://tuan.gome.com.cn/q<br>
-                    搜索结果页面：http://tuan.gome.com.cn/groupon/searchKey/%E7%94%B5%E8%84%91<br>
-                    分类列表页：http://tuan.gome.com.cn/groupon/cat32825718.html<br>
-                    详情页：http://tuan.gome.com.cn/deal/T8800345762.html
+                    <div
+                      v-for="(url, index) in card.urls"
+                      :key="index"
+                    >
+                      {{url.t}}
+                    </div>
                   </a-descriptions-item>
                   <a-descriptions-item label="备注">
-                    暂无
+                    {{card.other}}
                   </a-descriptions-item>
                 </a-descriptions>
                 </a-card-grid>
               </a-card>
+
+
+              <a-card size="small" title="总项目名称" v-if="card.type == 1" >
+                 <div style="margin-top:10px;"
+                  v-for="(sub, index) in card.sub"
+                  :key="index"
+                >
+                    <a-card-grid style="width:100%;">
+                    <a-descriptions size="small" :column="5" :style="
+                                    index != 1 && `margin-top:10px`
+                                  ">
+                  <a-descriptions-item label="应用">
+                    {{sub.package}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="发版关键词">
+                    {{sub.sre}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="后端">
+                    {{sub.java}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="产品">
+                    {{sub.pm}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="前端">
+                    {{sub.fe}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="svn" :span=5>
+                    {{sub.svn}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="地址" :span=3>
+                    {{sub.url}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="备注">
+                    {{sub.other}}
+                  </a-descriptions-item>
+                    </a-descriptions>
+                    </a-card-grid>
+                 </div>
+                  </a-card> 
+            </div>  
+    <div>      
+</div>
+
+
+
         </div>
       </div>
     </main>

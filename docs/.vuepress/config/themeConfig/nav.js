@@ -108,7 +108,7 @@ module.exports = [
           { text: '小程序', link: '/pages/9aade0/' },
           { text: 'js基础', link: '/pages/0a4c33/' },
           { text: '框架类', link: '/pages/a90b53/' },
-          { text: '框架类', link: '/pages/8c4bc7/' },
+          { text: '算法', link: '/pages/8c4bc7/' },
         ],
       },
     ],

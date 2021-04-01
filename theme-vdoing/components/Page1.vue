@@ -2,12 +2,6 @@
   <div>
     <main class="page page1">
       <div :class="`theme-vdoing-wrapper ${bgStyle}`">
-        <!-- <ArticleInfo v-if="isArticle()" /> -->
-        <!-- <component
-          class="theme-vdoing-content"
-          v-if="pageComponent"
-          :is="pageComponent"
-        /> -->
         <div class="content-wrapper">
           <RightMenu v-if="showRightMenu" />
           <h1 v-if="showTitle">
@@ -18,19 +12,42 @@
             {{this.$page.title}}
           </h1>
           {{ page1Data.heroText }}
-          <!-- <Content class="theme-vdoing-content" /> -->
+              <a-card size="small" title="真划算">
+                <a-card-grid style="width:100%;">
+                <a-descriptions size="small" :column="5">
+                  <a-descriptions-item label="应用">
+                    cheap-web
+                  </a-descriptions-item>
+                  <a-descriptions-item label="发版关键词">
+                    gfe发版
+                  </a-descriptions-item>
+                  <a-descriptions-item label="后端">
+                    张飞云（组）
+                  </a-descriptions-item>
+                  <a-descriptions-item label="产品">
+                    无
+                  </a-descriptions-item>
+                  <a-descriptions-item label="前端">
+                    段宁
+                  </a-descriptions-item>
+                  <a-descriptions-item label="svn" :span=5>
+                    https://code.ds.gome.com.cn/svn/atg_poc/30_Coding/NewDevMode/trunk/gome-gfe/channel-web/newindex
+                  </a-descriptions-item>
+                  <a-descriptions-item label="地址" :span=3>
+                    首页：http://tuan.gome.com.cn/cheap-web<br>
+                    抢购专场：http://tuan.gome.com.cn/q<br>
+                    搜索结果页面：http://tuan.gome.com.cn/groupon/searchKey/%E7%94%B5%E8%84%91<br>
+                    分类列表页：http://tuan.gome.com.cn/groupon/cat32825718.html<br>
+                    详情页：http://tuan.gome.com.cn/deal/T8800345762.html
+                  </a-descriptions-item>
+                  <a-descriptions-item label="备注">
+                    暂无
+                  </a-descriptions-item>
+                </a-descriptions>
+                </a-card-grid>
+              </a-card>
         </div>
-        <!-- <PageEdit /> -->
-        <!-- <PageNav v-bind="{ sidebarItems }" /> -->
       </div>
-
-
-
-      <UpdateArticle
-        :length="3"
-        :moreArticle="updateBarConfig && updateBarConfig.moreArticle"
-        v-if="isShowUpdateBar"
-      />
     </main>
   </div>
 </template>
@@ -183,4 +200,7 @@ export default {
 .page1 .page-edit {
     max-width: 90%;
 }
+.ant-descriptions-view table{
+    margin:0; 
+  }
 </style>

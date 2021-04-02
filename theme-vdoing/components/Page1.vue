@@ -63,11 +63,24 @@
                     <a-descriptions size="small" :column="5" :style="
                                     index != 1 && `margin-top:10px`
                                   ">
+
+                  <a-descriptions-item label="页面名称">
+                    {{sub.title}}
+                  </a-descriptions-item>
                   <a-descriptions-item label="应用">
                     {{sub.package}}
                   </a-descriptions-item>
+                  <a-descriptions-item label="所属模块">
+                    {{sub.module}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="业务类型及内容">
+                    {{sub.content}}
+                  </a-descriptions-item>
                   <a-descriptions-item label="发版关键词">
                     {{sub.sre}}
+                  </a-descriptions-item>
+                  <a-descriptions-item label="域名" :span=2>
+                    {{sub.url}}
                   </a-descriptions-item>
                   <a-descriptions-item label="后端">
                     {{sub.java}}
@@ -80,9 +93,6 @@
                   </a-descriptions-item>
                   <a-descriptions-item label="svn" :span=5>
                     {{sub.svn}}
-                  </a-descriptions-item>
-                  <a-descriptions-item label="地址" :span=3>
-                    {{sub.url}}
                   </a-descriptions-item>
                   <a-descriptions-item label="备注">
                     {{sub.other}}
